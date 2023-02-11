@@ -1,0 +1,54 @@
+<html>
+<Head>
+<title>
+English
+</title>
+</head>
+<body>
+<center>
+
+<h1> People Entered : 
+</h1>
+<br>
+<h2 id ="la" > 0 </h2>
+<button id = "ops"  onclick ="increment()">
+Increment
+</button>
+
+<br> <Br>
+
+
+<button id ="save"   onclick = "save()">  Save </button>
+
+Previous : 
+<p id ="r">   </p>
+</center>
+<script>
+var f = document.getElementById("r");
+var countEl =document.getElementById("la");
+
+var count = 0;
+
+function increment()
+{
+
+
+count += 1;
+
+countEl.innerText = count;
+
+}
+
+function save()
+{
+    f.innerText = count;
+    count =0;
+
+   countEl.innerText = count;
+}
+
+
+</script>
+
+</body>
+</html>
